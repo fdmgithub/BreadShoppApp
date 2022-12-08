@@ -5,14 +5,14 @@ import { COLORS } from '../../constants/themes/colors';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    borderRadius: 10,
-    marginHorizontal: 20,
+    padding: 10,
+    borderBottomColor: COLORS.primaryDark,
+    borderBottomWidth: 1,
+    backgroundColor: COLORS.primary,
+    height: 85,
+    marginHorizontal: 10,
     marginVertical: 10,
-    height: 160,
-  },
-  contentContainer: {
-    flex: 1,
-    borderRadius: 10,
+    borderRadius: 5,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -22,14 +22,19 @@ export const styles = StyleSheet.create({
     shadowRadius: 1.41,
     elevation: 2,
     justifyContent: 'center',
-    alignItems: 'center',
-    padding: 10,
   },
-  title: {
-    fontSize: 18,
+  headerContainer: {},
+  date: {},
+  contentContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  content: {},
+  total: {
+    fontSize: 16,
     fontFamily: 'Lato-Bold',
-    color: COLORS.text,
   },
 });
-
-
